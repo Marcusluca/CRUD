@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="button.css">
+    
+    <link rel ="stylesheet" href="main.css">
+    <link rel="stylesheet" href="records.css">
+    <link rel="stylesheet" href ="modal.css">
+    <script src ="main.js" defer></script>
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title" >Cadastro de Clientes</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarClientes"> Cadastrar Clientes</button>
+        <table class="records">
+            <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>E-mail</th>
+                  <th>Celular</th>
+                  <th>Cidade</th>
+                  <th>Ação</th>
+                
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marcus</td>
+                    <td>marcus@gmail.com</td>
+                    <td>(31)986853937</td>
+                    <td> anapolis</td>
+                    <td>
+                        <button type="button" class ="button green">editar</button>
+                        <button type = "button" class="button red"> excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>maria@gmail.com</td>
+                    <td>(31)986853937</td>
+                    <td> anapolis</td>
+                    <td>
+                        <button type="button" class ="button green">editar</button>
+                        <button type = "button" class="button red"> excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>lucas</td>
+                    <td>lucas@gmail.com</td>
+                    <td>(31)986853937</td>
+                    <td> brasil</td>
+                    <td>
+                        <button type="button" class ="button green">editar</button>
+                        <button type = "button" class="button red"> excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class ="modal-content">
+                <header class = "modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class ="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type ="text" class="modal-field" placeholder="Nome Do cliente">
+                    <input type ="email" class="modal-field" placeholder="E-mail-Do cliente">
+                    <input type ="text" class="modal-field" placeholder="Celular Do cliente">
+                    <input type ="text" class="modal-field" placeholder="Cidade Do cliente">
+                </form>
+                <footer class ="modal-footer">
+                    <button class="button green">Salvar</button>
+                    <button class ="button blue">Cancelar</button>
+
+                </footer>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    
+</body>
+</html>
